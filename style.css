@@ -1,0 +1,536 @@
+/* ================================================
+                    Common CSS
+===================================================*/
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #666666;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignLeft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.alignRight{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.alignCenter{
+    display: block;
+    margin-right: 0 auto 15px;
+}
+/* For Desktop */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-low-3{width: 18.7%;}
+.col-3{width: 25%;}
+.col-low-4{width: 29%;}
+.col-high-3{width: 32%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+.row{
+    width: 100%;
+}
+
+/* ================================================
+                    Top header CSS
+===================================================*/
+.header-area{
+    width: 100%;
+    clear: both;
+}
+.top-header-area{
+    background-color: #ba2e1f;
+    width: 100%;
+    padding: 13px 0;
+}
+.mini-menu{
+    float: left;
+    width: 70%;
+    padding-top: 5px;
+}
+.mini-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini-menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.mini-menu ul li::after{
+    content: "";
+    background: white;
+    position: absolute;
+    height: 13px;
+    width: 1px;
+    top: 6px;
+    right: -10px;
+}
+.mini-menu ul li:last-child:after{
+    display: none;
+}
+.mini-menu ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+}
+.mini-menu ul li a:hover{
+    color: #ddd;
+}
+.search-area{
+    float: right;
+    width: 30%;
+}
+.inner-top-header{
+    overflow: hidden;
+}
+.search-area form{
+    float: right;
+    max-width: 210px;
+    width: 96%;
+    padding: 2%;
+    background: white;
+    border-radius: 25px;
+}
+.search-area input{
+    border: none;
+    width: 75%;
+    float: left;
+    padding: 1%;
+    color: black;
+}
+.search-area input[type="submit"]{
+    background: url(Images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    width: 23%;
+
+}
+/* ================================================
+                    Main header CSS
+===================================================*/
+.main-header-area{
+    clear: both;
+    width: 100%;
+}
+.inner-header{
+    overflow: hidden;
+    padding: 40px 0px;
+}
+.logo-area{
+    float: left;
+    width: 240px;
+}
+.social-area{
+    float: right;
+    width: 100%;
+    padding-top: 20px;
+    max-width: 600px;
+}
+.social-area ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: right;
+}
+.social-area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social-area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social-area ul li a i{
+    background: #333333;
+    border-radius: 50%;
+    width: 30px;
+    padding-top: 8px;
+    color: white;
+    transition: 0.3s;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.social-area ul li a:hover i{
+    background: #BA2E1F;
+    transform: scale(1.2);
+}
+.social-area ul li a:hover i.fa-linkedin-in{
+    background: #0678B6;
+}
+.social-area ul li a:hover i.fa-twitter{
+    background: #37B1E2;
+}
+.social-area ul li a:hover i.fa-pinterest{
+    background: #E83F3A;
+}
+.social-area ul li a:hover i.fa-google-plus-g{
+    background: #E83F3A;
+}
+.social-area ul li a:hover i.fa-rss{
+    background: #ee802f;
+    margin-right: 10px;
+}
+/* ================================================
+                    Main menu CSS
+===================================================*/
+.main-menu{
+    width: 100%;
+    clear: both;
+}
+.inner-menu{
+    background: url(Images/menu_bar.png);
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    min-height: 30px;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 0;
+}
+.main-menu ul{
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+.main-menu ul li{
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+.main-menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Georgia;
+    transition: 0.3s;
+    display: block;
+    padding: 5px;
+}
+.main-menu ul li a:hover{
+    color: #ba2e1f;
+}
+.main-menu ul li:hover a{
+    color: #ba2e1f;
+}
+.main-menu ul li:hover ul li a{
+    color: white;
+}
+/* DropDown style */
+.main-menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 140px;
+    /* left: -15px; */
+    left: -99999999999px;
+    top: 25px;
+}
+.main-menu ul li:hover ul{
+    left: -15px;
+}
+.main-menu ul li:hover ul ul{
+    left: -999999915px;
+}
+.main-menu ul li:hover ul li:hover ul{
+    left: 140px;
+}
+.main-menu ul ul li{
+    margin: 0px;
+    display: block;
+}
+.main-menu ul ul li a:hover{
+    background: #333333;
+    color: white;
+}
+.main-menu ul ul li:hover a{
+    background: #333333;
+    color: white;
+}
+.main-menu ul ul li:hover ul li a{
+    background: none;
+    color: white;
+}
+.main-menu ul ul li ul li a:hover{
+    background: #333333;
+    color: white;
+}
+.main-menu ul ul ul{
+    left: 140px;
+    top: 0px;
+}
+/* ================================================
+                    Hero Area CSS
+===================================================*/
+.inner-hero img{
+    height: 440px;
+    width: 400px;
+    transition: 0.3s;
+}
+.hero-area{
+    background: white;
+    margin: 25px;
+    padding: 0;
+}
+.hero-area img:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+.inner-hero{
+    overflow: hidden;
+}
+.inner-hero h2{
+    font-size: 86px;
+    color: black;
+    font-size: 86px;
+    line-height: 1.3em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner-hero p{
+    color: #666666;
+    font-size: 16px;
+    font-family: Georgia;
+    font-weight: normal;
+}
+.inner-hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.inner-hero a:hover{
+    transform: scale(1.3);
+    text-decoration: underline;
+    margin-right: 20px;
+}
+/* ================================================
+                    Work Area CSS
+===================================================*/
+.work-area{
+    margin-top: 50px;
+    background: #f2f2f2;
+    height: 560px;
+}
+/* .inner-work{
+    
+} */
+.work-area a:hover{
+    transform: scale(1.3);
+}
+.work-area a{
+    transition: 0.3s;
+}
+
+.about-area img{
+    width: 290px;
+    height: 160px;
+}
+.inner-work h2{
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 52px;
+}
+.about-area p{
+    font-size: 13px;
+    font-family: Georgia;
+}
+.about-area a{
+    float: right;
+    font-size: 13px;
+    color: #ba2e1f;
+}
+/* .service-area{} */
+.service-area img{
+    height: 64px;
+    width: 64px;
+}
+.service-area h6{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.service-area p{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    margin-bottom: 27.7px;
+}
+.service-area a{
+    float: right;
+    font-size: 13px;
+    color: #ba2e1f;
+    /* margin-top: 15px; */
+}
+/* .testimonial-area{} */
+.testimonial-area h3{
+    font-size: 14px;
+    background-image: url(images/comma.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    padding: 15px 0px 15px 65px;
+    color: #989898;
+}
+/* .ct{
+    font-size: 1px;
+} */
+.testimonial-area p{
+    font-size: 13px;
+}
+
+.testimonial-area a{
+    color: #ba2e1f;
+    font-size: 13px;
+    float: right;
+}
+.service-area img:hover{
+    transform: scale(1.3);
+}
+.service-area img{
+    transition: 0.3s;
+}
+.about-area img{
+    transition: 0.3s;
+}
+.about-area img:hover{
+    transform: rotate(15deg) scale(1.2);
+    opacity: 0.5;
+    /* transform: scale(1.3); */
+}
+/* ================================================
+                    Footer CSS
+===================================================*/
+.inner-footer{
+    margin-top: 30px;
+}
+.inner-footer h3{
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner-footer p{
+    font-size: 12px;
+    margin: 0px;
+}
+.inner-footer ul li a{
+    font-size: 12px;
+}
+.big-footer p{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+.quick a{
+    text-decoration: none;
+    color: #666666;
+}
+.child-footer{
+    border-top: 1px solid black;
+}
+.quick ul li a{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+.quick ul li{
+    border-bottom: 1px solid #807e7e;
+}
+.inner-footer h4{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.inner-footer h6{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.child-blog a{
+    font-size: 12px;
+    color: #ba2e1f;
+}
+.inner-footer .input{
+    background: #f2f2f2;
+    width: 210px;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.inner-footer textarea{
+    background: #f2f2f2;
+    height: 110px;
+    width: 210px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.my-btn{
+    width: 80px;
+    color: #ba2e1f;
+    border-radius: 7px;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border: 0px;
+}
+
+.name-here{
+    color: #ba2e1f;
+    /* transition: 0.3s; */
+}
+.my-btn:hover{
+    background: red;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.copyRight_area{
+    width: 100%;
+    margin-top: 450px;
+    height: 65px;
+    background: #f2f2f2;
+}
+.left-copyright{
+    float: left;
+}
+.right-copyright{
+    float: right;
+}
+
